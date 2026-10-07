@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marian Galba</title>
+<meta name="description" content="Small, simple apps by Marian Galba.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root{
+  --bg:#F3EDE2; --card:#F8F3EA; --ink:#3F362F; --soft:#6E6055; --line:rgba(110,96,85,.18);
+  --shadow:2px 2px 5px rgba(150,125,100,.09), -2px -2px 5px rgba(255,255,255,.45);
+  --link:#C2552B;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#211C18; --card:#2B2520; --ink:#EFE6DA; --soft:#B5A798; --line:rgba(239,230,218,.16);
+         --shadow:none; --link:#FFB38A; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; color:var(--ink); line-height:1.65; font-size:18px;
+  font-family: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background:
+    radial-gradient(520px 420px at 8% 4%, rgba(255,154,92,.30), transparent 70%),
+    radial-gradient(560px 460px at 96% 12%, rgba(154,167,247,.30), transparent 70%),
+    radial-gradient(520px 440px at 85% 92%, rgba(245,160,188,.26), transparent 70%),
+    radial-gradient(520px 420px at 6% 88%, rgba(247,207,85,.26), transparent 70%),
+    var(--bg);
+  background-attachment: fixed;
+  min-height:100vh;
+}
+@media (prefers-color-scheme: dark){
+  body{ background:
+    radial-gradient(520px 420px at 8% 4%, rgba(255,154,92,.10), transparent 70%),
+    radial-gradient(560px 460px at 96% 12%, rgba(154,167,247,.12), transparent 70%),
+    var(--bg); background-attachment:fixed; }
+}
+main{ max-width:680px; margin:0 auto; padding:44px 22px 64px; }
+.heart{ width:46px; height:46px; display:block; margin-bottom:10px }
+h1{ font-size:2rem; line-height:1.2; margin:0 0 6px; font-weight:800; letter-spacing:-.01em }
+h2{ font-size:1.2rem; margin:0 0 8px; font-weight:800 }
+p{ margin:0 0 12px }
+.meta{ color:var(--soft); font-size:.9rem; margin-bottom:26px }
+.card{ background:var(--card); border-radius:22px; padding:22px 24px; margin:0 0 16px; box-shadow:var(--shadow); }
+.card p:last-child, .card ul:last-child{ margin-bottom:0 }
+.lead{ font-size:1.12rem }
+ul{ margin:0 0 12px; padding-left:1.2em }
+li{ margin:0 0 6px }
+a{ color:var(--link); text-underline-offset:3px }
+footer{ margin-top:30px; color:var(--soft); font-size:.9rem }
+.nav{ margin-bottom:22px; font-size:.95rem }
+.nav a{ color:var(--soft) }
+</style>
+</head>
+<body>
+<main>
+
+<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#FFB347"/><stop offset=".55" stop-color="#F4736A"/><stop offset="1" stop-color="#E879B0"/>
+</linearGradient></defs>
+<path d="M12 20.5S3 15.3 3 9.2C3 6.4 5.1 4.5 7.5 4.5c1.8 0 3.4 1 4.5 2.6 1.1-1.6 2.7-2.6 4.5-2.6 2.4 0 4.5 1.9 4.5 4.7 0 6.1-9 11.3-9 11.3z"
+ fill="none" stroke="url(#g)" stroke-width="2.1" stroke-linejoin="round"/></svg>
+
+<h1>Marian Galba</h1>
+<p class="meta">Small, simple apps</p>
+
+<div class="card">
+<h2>Gali</h2>
+<p>A simple baby tracker for feeds, sleep and nappies. Everything stays on your phone.</p>
+<p><a href="/gali/">Support</a> &nbsp;·&nbsp; <a href="/gali-privacy/">Privacy policy</a></p>
+</div>
+
+</main>
+</body>
+</html>
